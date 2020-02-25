@@ -1,0 +1,7 @@
+Merhabalar hocam ; 
+login sayfasını dinamikleştirdim veri tabanı ile optimize çalışıyor artık aktif olarak giriş yapabiliyoruz
+veritabanı ile öğrenci ve öğretmen olarak bu hafta da kendime güzel bir admin teması beğendim onu aspx ile masterpage kullanıp 
+ana temayı aspx e dökeceğim sayfaları oluşturacağım ardından diğer haftalarda da diğer veri tabanı ile eş zamanlı çalışan kontrolleri
+yazacağım. Kullanıcı ekleme ders seçme vs gibi. Veri Tabanını script şeklinde upload ettim bilginize.
+
+Teşekkürler.
