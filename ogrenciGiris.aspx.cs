@@ -13,5 +13,20 @@ namespace Yaz_Okulu_Otomasyonu
         {
 
         }
+
+        protected void btnGiris_Click(object sender, EventArgs e)
+        {
+            bool sonuc = SQLHelper.GirisYap_Ogrenci(txtTcKimlikNo.Text, txtSifre.Text);
+
+            if (sonuc)
+            {
+                Session.Add("kullanici_Turu", "Ogrenci");
+                Response.Redirect("Anasayfa.aspx");
+            }
+            else
+            {
+                Label1.Text = "Hatalı Giriş";
+            }
+        }
     }
 }

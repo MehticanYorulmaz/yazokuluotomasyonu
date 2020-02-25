@@ -39,7 +39,7 @@
 					</span>
 
 					<div class="wrap-input100 validate-input m-b-10" data-validate = "Username is required">
-						<input class="input100" type="text" name="username" placeholder="Tc Kimlik No">
+					<asp:TextBox ID="txtTcKimlikNo" CssClass="input100" runat="server"></asp:TextBox>
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-user"></i>
@@ -47,7 +47,7 @@
 					</div>
 
 					<div class="wrap-input100 validate-input m-b-10" data-validate = "Password is required">
-						<input class="input100" type="password" name="pass" placeholder="Şifre">
+                        <asp:TextBox ID="txtSifre" CssClass="input100" runat="server" TextMode="Password"></asp:TextBox>
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-lock"></i>
@@ -55,10 +55,13 @@
 					</div>
 
 					<div class="container-login100-form-btn p-t-10">
-						<button class="login100-form-btn">
-							Giriş Yap
-						</button>
-					</div>
+						
+                        <asp:Button ID="btnGiris" CssClass="login100-form-btn" runat="server" Text="Giriş Yap" OnClick="btnGiris_Click" />
+					<br />
+                    <br />
+                    <asp:Label ID="Label1" runat="server" Text="" BackColor="Red" BorderColor="White"></asp:Label>
+                    
+                    </div>
 
 					<div class="text-center w-full p-t-25 p-b-230">
 						<a href="#" class="txt1">

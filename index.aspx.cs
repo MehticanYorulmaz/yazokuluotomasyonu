@@ -11,7 +11,7 @@ namespace Yaz_Okulu_Otomasyonu
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Session.Remove("kullanici_turu");
         }
 
         protected void btnOgretmen_Click(object sender, EventArgs e)
